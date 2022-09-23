@@ -1,0 +1,3 @@
+<button class="btn btn-primary" (click)="update()">Display Details</button>
+<p *ngIf="isvisible">Secret Password= "tuna"</p>
+<p *ngFor="let temp of status" [ngStyle]="{backgroundColor: temp>5 ?'blue': 'white'}">{{temp}}</p>
