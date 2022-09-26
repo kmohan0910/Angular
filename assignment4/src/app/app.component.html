@@ -1,0 +1,4 @@
+<hr>
+<app-game-control (intervalFired)="triggered($event)"></app-game-control>
+<app-odd *ngFor="let i of oddserver" ><p>{{i}}</p></app-odd>
+<app-even *ngFor="let i of evenserver"><p>{{i}}</p></app-even>
