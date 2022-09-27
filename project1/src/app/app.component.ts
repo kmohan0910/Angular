@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project1';
+  recipie: Boolean = false
+  shopping: Boolean = true
+  shoppingChange(){
+
+    this.recipie= false
+    this.shopping= true
+
+  }
+  recipieChange(temp: Boolean){
+   this.recipie= true
+   this.shopping= false
+  }
 }

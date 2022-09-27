@@ -1,9 +1,10 @@
+<app-header (recipie)="recipieChange($event)" (shopping)="shoppingChange()"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-header></app-header>
-      <app-recipes></app-recipes>
-      <app-shoppingList></app-shoppingList>
+     
+      <app-recipes *ngIf="recipie"></app-recipes>
+      <app-shoppingList *ngIf="!recipie"></app-shoppingList>
     </div>
   </div>
 </div>

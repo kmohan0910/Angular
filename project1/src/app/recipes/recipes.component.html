@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-5">
-        <app-recipes-list></app-recipes-list>
+        <app-recipes-list ></app-recipes-list>
     </div>
     <div class="col-md-5 pull-right">
-        <app-recipes-detail ></app-recipes-detail>
+        <app-recipes-detail (recipewasSelected)="selectedRecipe($event)"></app-recipes-detail>
+        <ng-template #tcatch><p>Please select a Recipe!!</p></ng-template>
     </div>
 </div>
