@@ -7,11 +7,13 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipes-item.component.css']
 })
 export class RecipesItemComponent implements OnInit {
- @Input() recipes : Recipe = new Recipe( "a", "b", "c");
- @Output() sendrecipes = new EventEmitter<void>();
+ @Input() recipes: Recipe = new Recipe( "a", "b", "c");
+ @Output() sendrecipes = new EventEmitter<String>();
+
+
   constructor() { }
 eventClicked( ){
-this.sendrecipes.emit()
+this.sendrecipes.emit("sdfkjs")
 }
   ngOnInit(): void {
 console.log(this.recipes)  }

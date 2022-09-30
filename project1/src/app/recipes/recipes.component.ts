@@ -8,8 +8,8 @@ import { Recipe } from './recipes-list/recipe.model';
 })
 export class RecipesComponent implements OnInit {
   
-  selectedRecipe(event : Event){
-    console.log(event)
+  selectedRecipe(){
+    console.log("hi")
   }
   constructor() { }
 
