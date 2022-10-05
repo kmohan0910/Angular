@@ -6,17 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project1';
-  recipie: Boolean = false
-  shopping: Boolean = true
-  shoppingChange(){
+  loadedFeature = 'recipe';
 
-    this.recipie= false
-    this.shopping= true
-
-  }
-  recipieChange(temp: Boolean){
-   this.recipie= true
-   this.shopping= false
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
